@@ -1,0 +1,168 @@
+2025-11-09 05:32:21,911 - INFO - Executing SQL statement with values -> ('chris', '$2b$12$2HR.jNLyRrEytVz7A93.h.o1Pdg8afLEWvifZn77cXtadS/yxPUei')
+2025-11-09 05:32:21,911 - INFO - 
+            INSERT INTO Users (username, password_hash)
+            VALUES (?, ?);
+            
+2025-11-09 05:34:02,656 - INFO - Logging In with User ID: 1
+2025-11-09 05:34:02,730 - INFO - Loading page 1: Input Transactions
+2025-11-09 05:34:05,824 - INFO - Executing SQL statement with values -> ()
+2025-11-09 05:34:05,824 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 05:34:32,170 - INFO - Logging In with User ID: 1
+2025-11-09 05:34:32,217 - INFO - Executing SQL statement with values -> ()
+2025-11-09 05:34:32,217 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 05:35:49,023 - INFO - Executing SQL statement with values -> 1
+2025-11-09 05:35:49,023 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 05:35:51,808 - INFO - Executing SQL statement with values -> 1
+2025-11-09 05:35:51,809 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 05:35:56,841 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 05:35:56,841 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 05:36:02,169 - INFO - Loading page 4: Money Stores
+2025-11-09 05:36:02,294 - INFO - Loading page 4: Money Stores
+2025-11-09 05:36:04,899 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:36:06,622 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:36:21,952 - INFO - Loading page 1: Input Transactions
+2025-11-09 05:36:27,638 - INFO - Loading page 1: Input Transactions
+2025-11-09 05:36:30,095 - INFO - Loading page 1: Input Transactions
+2025-11-09 05:36:31,660 - INFO - Loading page 1: Input Transactions
+2025-11-09 05:36:31,766 - INFO - Saving transaction, with item df ->
+2025-11-09 05:36:31,768 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 05:36:31,769 - INFO - Executing SQL statement with values -> ('2025-11-09T05:36:31.769450', '2025-11-09T05:36:31.769450', 1)
+2025-11-09 05:36:31,769 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 05:36:31,775 - INFO - Executing SQL statement with values -> ('ashd', 1)
+2025-11-09 05:36:31,776 - INFO - 
+            INSERT INTO Vendors (name, meta_data_id)
+            VALUES (?, ?);
+            
+2025-11-09 05:36:31,781 - INFO - Executing SQL statement with values -> ('2025-11-09T05:36:31.781708', '2025-11-09T05:36:31.781708', 1)
+2025-11-09 05:36:31,782 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 05:36:31,786 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 11213.0, False, None, 1, None, None, None, 2)
+2025-11-09 05:36:31,786 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 05:36:31,845 - INFO - Loading page 1: Input Transactions
+2025-11-09 05:38:03,191 - INFO - Loading page 1: Input Transactions
+2025-11-09 05:38:06,192 - INFO - Loading page 1: Input Transactions
+2025-11-09 05:39:42,160 - INFO - Loading page 1: Input Transactions
+2025-11-09 05:39:42,248 - INFO - Saving transaction, with item df ->
+2025-11-09 05:39:42,249 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 05:39:42,249 - INFO - Executing SQL statement with values -> ('2025-11-09T05:39:42.249147', '2025-11-09T05:39:42.249147', 1)
+2025-11-09 05:39:42,249 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 05:39:42,256 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, None, False, None, None, None, None, None, 3)
+2025-11-09 05:39:42,257 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 05:42:14,657 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:45:55,087 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:45:58,385 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:46:07,938 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:46:15,962 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:46:17,301 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:46:17,994 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:46:19,845 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:46:20,031 - INFO - Executing SQL statement with values -> ('2025-11-09T05:46:20.031043', '2025-11-09T05:46:20.031043', 1)
+2025-11-09 05:46:20,031 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 05:46:20,053 - INFO - Executing SQL statement with values -> ('sdasd', 0.0, None, 4)
+2025-11-09 05:46:20,053 - INFO - 
+            INSERT INTO Categories (name,importance,parent_category_id, meta_data_id)
+            VALUES (?, ?, ?, ?);
+            
+2025-11-09 05:46:20,063 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:46:22,451 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:46:24,651 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:47:36,611 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:47:37,070 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:47:37,720 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:47:38,062 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:47:38,078 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:48:25,162 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:48:25,583 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:48:25,992 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:48:26,008 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:48:27,995 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:48:28,362 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:48:56,180 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:48:56,554 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:49:01,292 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:49:13,079 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:49:13,516 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:49:13,948 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:49:13,963 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:49:32,588 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:49:33,003 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:49:42,083 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:49:42,120 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:50:14,646 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:50:15,047 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:50:15,061 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:50:17,439 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:50:32,269 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:50:32,700 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:50:39,046 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:50:39,484 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:50:42,343 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:50:44,403 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:51:22,862 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:51:23,347 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:51:23,755 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:51:23,777 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:51:25,459 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:51:41,401 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:51:41,807 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:51:54,035 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:52:18,322 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:52:18,683 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:52:19,813 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:52:22,268 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:52:24,011 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:52:25,400 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:52:26,653 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:52:29,179 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:52:30,887 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:52:53,214 - INFO - Loading page 2: Edit Vendors
+2025-11-09 05:52:53,631 - INFO - Loading page 2: Edit Vendors

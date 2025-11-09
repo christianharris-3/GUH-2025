@@ -1,0 +1,327 @@
+2025-11-09 06:18:21,409 - INFO - Executing SQL statement with values -> ('chris', '$2b$12$Wn7HG2eeRVpbAL0aJ4p7/.59K.pEgoTT70tsODRaYmxTAuf0o1rEi')
+2025-11-09 06:18:21,409 - INFO - 
+            INSERT INTO Users (username, password_hash, tokens)
+            VALUES (?, ?, 0);
+            
+2025-11-09 06:18:25,766 - INFO - Logging In with User ID: 1
+2025-11-09 06:18:25,811 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 06:18:25,811 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 06:18:29,064 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:18:35,534 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:18:42,607 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:18:45,576 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:18:49,558 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:18:56,932 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:18:57,113 - INFO - Executing SQL statement with values -> ('2025-11-09T06:18:57.113462', '2025-11-09T06:18:57.113462', 1)
+2025-11-09 06:18:57,113 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:18:57,119 - INFO - Executing SQL statement with values -> ('Food', 0.0, None, 1)
+2025-11-09 06:18:57,119 - INFO - 
+            INSERT INTO Categories (name,importance,parent_category_id, meta_data_id)
+            VALUES (?, ?, ?, ?);
+            
+2025-11-09 06:18:57,126 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:18:59,353 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:01,360 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:13,027 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:16,272 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:21,269 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:24,299 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:24,495 - INFO - Executing SQL statement with values -> ('2025-11-09T06:19:24.495716', '2025-11-09T06:19:24.495716', 1)
+2025-11-09 06:19:24,495 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:19:24,501 - INFO - Executing SQL statement with values -> ('snacks', 0.5, 1, 2)
+2025-11-09 06:19:24,501 - INFO - 
+            INSERT INTO Categories (name,importance,parent_category_id, meta_data_id)
+            VALUES (?, ?, ?, ?);
+            
+2025-11-09 06:19:24,508 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:26,521 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:27,283 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:30,704 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:32,809 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:32,998 - INFO - Executing SQL statement with values -> ('2025-11-09T06:19:32.998163', '2025-11-09T06:19:32.998163', 1)
+2025-11-09 06:19:32,998 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:19:33,004 - INFO - Executing SQL statement with values -> ('new category', 0.8, 1, 3)
+2025-11-09 06:19:33,004 - INFO - 
+            INSERT INTO Categories (name,importance,parent_category_id, meta_data_id)
+            VALUES (?, ?, ?, ?);
+            
+2025-11-09 06:19:33,011 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:33,067 - INFO - Executing SQL statement with values -> ('bread', None)
+2025-11-09 06:19:33,068 - INFO - 
+                UPDATE Categories SET name=?
+                WHERE category_id=?;
+                
+2025-11-09 06:19:33,069 - INFO - Executing SQL statement with values -> ('2025-11-09T06:19:33.069246', None)
+2025-11-09 06:19:33,069 - INFO - 
+                UPDATE MetaData
+                SET edited_timestamp = ?
+                WHERE meta_data_id = (
+                    SELECT meta_data_id FROM Categories
+                    WHERE category_id=?
+                );
+                
+2025-11-09 06:19:34,737 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:38,139 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:38,323 - INFO - Executing SQL statement with values -> ('new category', 0.8, 1, 3)
+2025-11-09 06:19:38,324 - INFO - 
+                UPDATE Categories SET name=?, importance=?, parent_category_id=?
+                WHERE category_id=?;
+                
+2025-11-09 06:19:38,324 - INFO - Executing SQL statement with values -> ('2025-11-09T06:19:38.324362', 3)
+2025-11-09 06:19:38,324 - INFO - 
+                UPDATE MetaData
+                SET edited_timestamp = ?
+                WHERE meta_data_id = (
+                    SELECT meta_data_id FROM Categories
+                    WHERE category_id=?
+                );
+                
+2025-11-09 06:19:38,331 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:38,385 - INFO - Executing SQL statement with values -> ('bread', 3)
+2025-11-09 06:19:38,385 - INFO - 
+                UPDATE Categories SET name=?
+                WHERE category_id=?;
+                
+2025-11-09 06:19:38,390 - INFO - Executing SQL statement with values -> ('2025-11-09T06:19:38.390530', 3)
+2025-11-09 06:19:38,390 - INFO - 
+                UPDATE MetaData
+                SET edited_timestamp = ?
+                WHERE meta_data_id = (
+                    SELECT meta_data_id FROM Categories
+                    WHERE category_id=?
+                );
+                
+2025-11-09 06:19:40,949 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:41,661 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:19:43,321 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:19:52,743 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:19:55,890 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:19:58,283 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:19:58,402 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:19:58,402 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:19:58,424 - INFO - Saving transaction, with item df ->
+2025-11-09 06:19:58,425 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:19:58,426 - INFO - Executing SQL statement with values -> ('2025-11-09T06:19:58.426516', '2025-11-09T06:19:58.426516', 1)
+2025-11-09 06:19:58,426 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:19:58,431 - INFO - Executing SQL statement with values -> ('Tesco', 4)
+2025-11-09 06:19:58,431 - INFO - 
+            INSERT INTO Vendors (name, meta_data_id)
+            VALUES (?, ?);
+            
+2025-11-09 06:19:58,437 - INFO - Executing SQL statement with values -> ('2025-11-09T06:19:58.436946', '2025-11-09T06:19:58.436946', 1)
+2025-11-09 06:19:58,437 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:19:58,441 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 14.0, False, None, 1, None, 3, None, 5)
+2025-11-09 06:19:58,441 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:21:45,131 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:23:11,585 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:23:23,778 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:23:51,775 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:23:52,823 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:23:52,932 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:23:52,932 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:23:52,933 - INFO - Saving transaction, with item df ->
+2025-11-09 06:23:52,934 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:23:52,934 - INFO - Executing SQL statement with values -> ('2025-11-09T06:23:52.934304', '2025-11-09T06:23:52.934304', 1)
+2025-11-09 06:23:52,934 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:23:52,940 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 6)
+2025-11-09 06:23:52,940 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:24:25,136 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:24:25,228 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:24:25,229 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:24:25,230 - INFO - Saving transaction, with item df ->
+2025-11-09 06:24:25,230 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:24:25,230 - INFO - Executing SQL statement with values -> ('2025-11-09T06:24:25.230769', '2025-11-09T06:24:25.230769', 1)
+2025-11-09 06:24:25,230 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:24:25,237 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 7)
+2025-11-09 06:24:25,237 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:24:26,120 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:24:26,121 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:24:45,826 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:24:45,826 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:24:47,045 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:24:47,045 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:25:09,790 - INFO - Logging In with User ID: 1
+2025-11-09 06:25:09,853 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 06:25:09,854 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 06:25:14,600 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:25:15,521 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:25:17,025 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:25:17,268 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:25:17,269 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:25:17,270 - INFO - Saving transaction, with item df ->
+2025-11-09 06:25:17,271 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:25:17,272 - INFO - Executing SQL statement with values -> ('2025-11-09T06:25:17.272322', '2025-11-09T06:25:17.272322', 1)
+2025-11-09 06:25:17,273 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:25:17,296 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 8)
+2025-11-09 06:25:17,296 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:25:18,562 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:25:18,562 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:25:18,622 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:28:59,992 - INFO - Logging In with User ID: 1
+2025-11-09 06:29:00,066 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 06:29:00,067 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 06:34:47,121 - INFO - Logging In with User ID: 1
+2025-11-09 06:34:47,159 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 06:34:47,159 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 06:36:23,419 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 06:36:23,420 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 06:38:19,716 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 06:38:19,716 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 06:38:21,387 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 06:38:21,387 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 06:38:29,576 - INFO - Executing SQL statement with values -> ('charris', 1)
+2025-11-09 06:38:29,577 - INFO - 
+                UPDATE Users SET username=?
+                WHERE user_id=?;
+                
+2025-11-09 06:38:29,584 - INFO - Executing SQL statement with values -> ('2025-11-09T06:38:29.584287', 1)
+2025-11-09 06:38:29,584 - INFO - 
+                UPDATE MetaData
+                SET edited_timestamp = ?
+                WHERE meta_data_id = (
+                    SELECT meta_data_id FROM Users
+                    WHERE user_id=?
+                );
+                
+2025-11-09 06:38:29,628 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 06:38:29,628 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 06:38:31,217 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 06:38:31,218 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 06:38:34,062 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 06:38:34,062 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 06:38:34,066 - INFO - Logged Out
+2025-11-09 06:38:39,074 - INFO - Logging In with User ID: 1
+2025-11-09 06:38:39,111 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 06:38:39,112 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 06:38:45,749 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 06:38:45,750 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 06:38:48,285 - INFO - Executing SQL statement with values -> ('chris', 1)
+2025-11-09 06:38:48,285 - INFO - 
+                UPDATE Users SET username=?
+                WHERE user_id=?;
+                
+2025-11-09 06:38:48,293 - INFO - Executing SQL statement with values -> ('2025-11-09T06:38:48.293056', 1)
+2025-11-09 06:38:48,293 - INFO - 
+                UPDATE MetaData
+                SET edited_timestamp = ?
+                WHERE meta_data_id = (
+                    SELECT meta_data_id FROM Users
+                    WHERE user_id=?
+                );
+                
+2025-11-09 06:38:48,336 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 06:38:48,336 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 06:38:55,215 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:38:56,601 - INFO - Loading page 2: Edit Vendors

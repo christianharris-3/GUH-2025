@@ -1,0 +1,254 @@
+2025-11-09 07:48:16,605 - INFO - Logging In with User ID: 1
+2025-11-09 07:48:16,655 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 07:48:16,655 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 08:01:31,254 - INFO - Logging In with User ID: 1
+2025-11-09 08:01:31,299 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 08:01:31,299 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 08:26:08,689 - INFO - Logging In with User ID: 1
+2025-11-09 08:26:08,722 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 08:26:08,722 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 08:26:21,876 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:26:21,876 - INFO - UPDATE Users SET tokens=3720 WHERE user_id=1
+2025-11-09 08:27:23,054 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:27:23,054 - INFO - UPDATE Users SET tokens=3720 WHERE user_id=1
+2025-11-09 08:27:23,055 - INFO - Executing SQL statement with values -> ('2025-11-09T08:27:23.055692', '2025-11-09T08:27:23.055692', 1)
+2025-11-09 08:27:23,056 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 08:27:23,061 - INFO - Executing SQL statement with values -> ('Tesco', 5, 35)
+2025-11-09 08:27:23,061 - INFO - 
+            INSERT INTO Vouchers (vendor_name,percent_off, meta_data_id)
+            VALUES (?, ?, ?);
+            
+2025-11-09 08:27:48,509 - INFO - Logging In with User ID: 1
+2025-11-09 08:27:48,547 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 08:27:48,547 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 08:27:51,535 - INFO - Loading page 1: Input Transactions
+2025-11-09 08:27:55,453 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:27:55,454 - INFO - UPDATE Users SET tokens=3720 WHERE user_id=1
+2025-11-09 08:27:55,457 - INFO - Executing SQL statement with values -> ('2025-11-09T08:27:55.457019', '2025-11-09T08:27:55.457019', 1)
+2025-11-09 08:27:55,457 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 08:27:55,465 - INFO - Executing SQL statement with values -> ('Tesco', 5, 36)
+2025-11-09 08:27:55,465 - INFO - 
+            INSERT INTO Vouchers (vendor_name,percent_off, meta_data_id)
+            VALUES (?, ?, ?);
+            
+2025-11-09 08:27:57,838 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 08:27:57,838 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 08:28:37,277 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 08:28:37,277 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 08:28:38,808 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 08:28:38,809 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 08:28:44,674 - INFO - Loading page 1: Input Transactions
+2025-11-09 08:28:49,462 - INFO - Loading page 1: Input Transactions
+2025-11-09 08:28:49,544 - INFO - Loading page 1: Input Transactions
+2025-11-09 08:28:49,670 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:28:49,670 - INFO - UPDATE Users SET tokens=95000000000000001120 WHERE user_id=1
+2025-11-09 08:28:49,677 - INFO - Saving transaction, with item df ->
+2025-11-09 08:28:49,679 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 08:28:49,679 - INFO - Executing SQL statement with values -> ('2025-11-09T08:28:49.679271', '2025-11-09T08:28:49.679271', 1)
+2025-11-09 08:28:49,679 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 08:28:49,683 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 1.9e+18, False, None, None, None, None, None, 37)
+2025-11-09 08:28:49,683 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 08:28:50,879 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:28:50,879 - INFO - UPDATE Users SET tokens=190000000000000001120 WHERE user_id=1
+2025-11-09 08:28:50,927 - INFO - Loading page 1: Input Transactions
+2025-11-09 08:28:58,965 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:28:58,965 - INFO - UPDATE Users SET tokens=190000000000000001120 WHERE user_id=1
+2025-11-09 08:29:12,744 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:29:12,744 - INFO - UPDATE Users SET tokens=189999999999999993220 WHERE user_id=1
+2025-11-09 08:29:12,745 - INFO - Executing SQL statement with values -> ('2025-11-09T08:29:12.745290', '2025-11-09T08:29:12.745290', 1)
+2025-11-09 08:29:12,745 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 08:29:12,768 - INFO - Executing SQL statement with values -> ('Tesco', 5, datetime.date(2025, 11, 16), 38)
+2025-11-09 08:29:12,768 - INFO - 
+            INSERT INTO Vouchers (vendor_name,percent_off,expire_date, meta_data_id)
+            VALUES (?, ?, ?, ?);
+            
+2025-11-09 08:29:25,401 - INFO - Logging In with User ID: 1
+2025-11-09 08:29:25,439 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 08:29:25,439 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 08:29:38,997 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:29:39,000 - INFO - UPDATE Users SET tokens=1.9e+20 WHERE user_id=1
+2025-11-09 08:29:39,002 - INFO - Executing SQL statement with values -> ('2025-11-09T08:29:39.001904', '2025-11-09T08:29:39.001904', 1)
+2025-11-09 08:29:39,002 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 08:29:39,009 - INFO - Executing SQL statement with values -> ('Tesco', 20, datetime.date(2025, 11, 16), 39)
+2025-11-09 08:29:39,009 - INFO - 
+            INSERT INTO Vouchers (vendor_name,percent_off,expire_date, meta_data_id)
+            VALUES (?, ?, ?, ?);
+            
+2025-11-09 08:29:40,530 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:29:40,530 - INFO - UPDATE Users SET tokens=1.9e+20 WHERE user_id=1
+2025-11-09 08:29:40,533 - INFO - Executing SQL statement with values -> ('2025-11-09T08:29:40.533299', '2025-11-09T08:29:40.533299', 1)
+2025-11-09 08:29:40,534 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 08:29:40,541 - INFO - Executing SQL statement with values -> ('Tesco', 5, datetime.date(2025, 11, 16), 40)
+2025-11-09 08:29:40,542 - INFO - 
+            INSERT INTO Vouchers (vendor_name,percent_off,expire_date, meta_data_id)
+            VALUES (?, ?, ?, ?);
+            
+2025-11-09 08:29:40,689 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:29:40,689 - INFO - UPDATE Users SET tokens=1.9e+20 WHERE user_id=1
+2025-11-09 08:29:40,690 - INFO - Executing SQL statement with values -> ('2025-11-09T08:29:40.690353', '2025-11-09T08:29:40.690353', 1)
+2025-11-09 08:29:40,690 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 08:29:40,696 - INFO - Executing SQL statement with values -> ('Tesco', 15, datetime.date(2025, 11, 16), 41)
+2025-11-09 08:29:40,696 - INFO - 
+            INSERT INTO Vouchers (vendor_name,percent_off,expire_date, meta_data_id)
+            VALUES (?, ?, ?, ?);
+            
+2025-11-09 08:29:40,860 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:29:40,860 - INFO - UPDATE Users SET tokens=1.9e+20 WHERE user_id=1
+2025-11-09 08:29:40,861 - INFO - Executing SQL statement with values -> ('2025-11-09T08:29:40.860996', '2025-11-09T08:29:40.860996', 1)
+2025-11-09 08:29:40,861 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 08:29:40,866 - INFO - Executing SQL statement with values -> ('Tesco', 5, datetime.date(2025, 11, 16), 42)
+2025-11-09 08:29:40,866 - INFO - 
+            INSERT INTO Vouchers (vendor_name,percent_off,expire_date, meta_data_id)
+            VALUES (?, ?, ?, ?);
+            
+2025-11-09 08:29:41,015 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:29:41,015 - INFO - UPDATE Users SET tokens=1.9e+20 WHERE user_id=1
+2025-11-09 08:29:41,015 - INFO - Executing SQL statement with values -> ('2025-11-09T08:29:41.015835', '2025-11-09T08:29:41.015835', 1)
+2025-11-09 08:29:41,015 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 08:29:41,021 - INFO - Executing SQL statement with values -> ('Tesco', 25, datetime.date(2025, 11, 16), 43)
+2025-11-09 08:29:41,021 - INFO - 
+            INSERT INTO Vouchers (vendor_name,percent_off,expire_date, meta_data_id)
+            VALUES (?, ?, ?, ?);
+            
+2025-11-09 08:29:41,177 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:29:41,177 - INFO - UPDATE Users SET tokens=1.9e+20 WHERE user_id=1
+2025-11-09 08:29:41,179 - INFO - Executing SQL statement with values -> ('2025-11-09T08:29:41.179127', '2025-11-09T08:29:41.179127', 1)
+2025-11-09 08:29:41,179 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 08:29:41,184 - INFO - Executing SQL statement with values -> ('Tesco', 20, datetime.date(2025, 11, 16), 44)
+2025-11-09 08:29:41,185 - INFO - 
+            INSERT INTO Vouchers (vendor_name,percent_off,expire_date, meta_data_id)
+            VALUES (?, ?, ?, ?);
+            
+2025-11-09 08:29:41,312 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:29:41,312 - INFO - UPDATE Users SET tokens=1.9e+20 WHERE user_id=1
+2025-11-09 08:29:41,313 - INFO - Executing SQL statement with values -> ('2025-11-09T08:29:41.313673', '2025-11-09T08:29:41.313673', 1)
+2025-11-09 08:29:41,313 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 08:29:41,318 - INFO - Executing SQL statement with values -> ('Tesco', 20, datetime.date(2025, 11, 16), 45)
+2025-11-09 08:29:41,319 - INFO - 
+            INSERT INTO Vouchers (vendor_name,percent_off,expire_date, meta_data_id)
+            VALUES (?, ?, ?, ?);
+            
+2025-11-09 08:29:41,513 - INFO - Executing SQL statement with values -> ()
+2025-11-09 08:29:41,514 - INFO - UPDATE Users SET tokens=1.9e+20 WHERE user_id=1
+2025-11-09 08:29:41,516 - INFO - Executing SQL statement with values -> ('2025-11-09T08:29:41.516317', '2025-11-09T08:29:41.516317', 1)
+2025-11-09 08:29:41,516 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 08:29:41,523 - INFO - Executing SQL statement with values -> ('Tesco', 5, datetime.date(2025, 11, 16), 46)
+2025-11-09 08:29:41,524 - INFO - 
+            INSERT INTO Vouchers (vendor_name,percent_off,expire_date, meta_data_id)
+            VALUES (?, ?, ?, ?);
+            
+2025-11-09 08:29:42,528 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 08:29:42,529 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 08:30:09,253 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 08:30:09,254 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 08:30:56,970 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 08:30:56,970 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;

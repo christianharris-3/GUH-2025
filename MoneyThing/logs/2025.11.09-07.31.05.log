@@ -1,0 +1,14 @@
+2025-11-09 07:31:05,904 - INFO - Logging In with User ID: 1
+2025-11-09 07:31:05,969 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 07:31:05,969 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 07:47:50,708 - INFO - Logging In with User ID: 1
+2025-11-09 07:47:50,748 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 07:47:50,748 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;

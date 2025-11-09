@@ -1,0 +1,282 @@
+2025-11-09 06:48:45,691 - INFO - Logging In with User ID: 1
+2025-11-09 06:48:45,731 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 06:48:45,731 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 06:48:49,072 - INFO - Loading page 2: Edit Vendors
+2025-11-09 06:48:50,468 - INFO - Loading page 4: Money Stores
+2025-11-09 06:48:50,561 - INFO - Loading page 4: Money Stores
+2025-11-09 06:48:51,301 - INFO - Loading page 3: Database View
+2025-11-09 06:48:54,961 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:48:57,108 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:48:57,197 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:48:57,197 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:48:57,199 - INFO - Saving transaction, with item df ->
+2025-11-09 06:48:57,200 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:48:57,201 - INFO - Executing SQL statement with values -> ('2025-11-09T06:48:57.201455', '2025-11-09T06:48:57.201455', 1)
+2025-11-09 06:48:57,201 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:48:57,210 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 9)
+2025-11-09 06:48:57,210 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:48:58,850 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:48:58,850 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:49:07,562 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:49:09,284 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:49:09,357 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:49:09,357 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:49:09,358 - INFO - Saving transaction, with item df ->
+2025-11-09 06:49:09,359 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:49:09,360 - INFO - Executing SQL statement with values -> ('2025-11-09T06:49:09.359979', '2025-11-09T06:49:09.359979', 1)
+2025-11-09 06:49:09,360 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:49:09,365 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 10)
+2025-11-09 06:49:09,365 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:49:10,354 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:49:10,355 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:49:21,049 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:49:21,051 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:49:21,105 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:49:23,152 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:49:23,237 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:49:23,238 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:49:23,239 - INFO - Saving transaction, with item df ->
+2025-11-09 06:49:23,240 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:49:23,240 - INFO - Executing SQL statement with values -> ('2025-11-09T06:49:23.240671', '2025-11-09T06:49:23.240671', 1)
+2025-11-09 06:49:23,240 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:49:23,247 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 11)
+2025-11-09 06:49:23,247 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:49:24,533 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:49:24,533 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:49:41,941 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:49:41,941 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:49:42,020 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:49:44,199 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:49:44,272 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:49:44,273 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:49:44,274 - INFO - Saving transaction, with item df ->
+2025-11-09 06:49:44,274 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:49:44,275 - INFO - Executing SQL statement with values -> ('2025-11-09T06:49:44.274999', '2025-11-09T06:49:44.274999', 1)
+2025-11-09 06:49:44,275 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:49:44,297 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 12)
+2025-11-09 06:49:44,297 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:49:49,118 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:49:49,118 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:50:28,103 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:50:29,058 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:50:29,129 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:50:29,129 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:50:29,130 - INFO - Saving transaction, with item df ->
+2025-11-09 06:50:29,131 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:50:29,131 - INFO - Executing SQL statement with values -> ('2025-11-09T06:50:29.131713', '2025-11-09T06:50:29.131713', 1)
+2025-11-09 06:50:29,131 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:50:29,137 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 13)
+2025-11-09 06:50:29,137 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:50:30,175 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:50:30,177 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:51:56,391 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:51:56,391 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:52:04,002 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:52:04,076 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:52:04,076 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:52:04,077 - INFO - Saving transaction, with item df ->
+2025-11-09 06:52:04,078 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:52:04,078 - INFO - Executing SQL statement with values -> ('2025-11-09T06:52:04.078238', '2025-11-09T06:52:04.078238', 1)
+2025-11-09 06:52:04,078 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:52:04,085 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 14)
+2025-11-09 06:52:04,085 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:52:05,365 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:52:05,365 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:52:29,987 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:52:31,194 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:52:31,270 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:52:31,270 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:52:31,271 - INFO - Saving transaction, with item df ->
+2025-11-09 06:52:31,272 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:52:31,272 - INFO - Executing SQL statement with values -> ('2025-11-09T06:52:31.272550', '2025-11-09T06:52:31.272550', 1)
+2025-11-09 06:52:31,272 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:52:31,278 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 15)
+2025-11-09 06:52:31,278 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:52:33,393 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:52:33,393 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:53:05,479 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:53:07,775 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:53:12,289 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:53:12,385 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:53:12,385 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:53:12,387 - INFO - Saving transaction, with item df ->
+2025-11-09 06:53:12,388 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:53:12,388 - INFO - Executing SQL statement with values -> ('2025-11-09T06:53:12.388363', '2025-11-09T06:53:12.388363', 1)
+2025-11-09 06:53:12,388 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:53:12,394 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 16)
+2025-11-09 06:53:12,394 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:53:13,308 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:53:13,310 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:53:40,619 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:53:42,101 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:53:42,174 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:53:42,175 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:53:42,176 - INFO - Saving transaction, with item df ->
+2025-11-09 06:53:42,177 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:53:42,177 - INFO - Executing SQL statement with values -> ('2025-11-09T06:53:42.177247', '2025-11-09T06:53:42.177247', 1)
+2025-11-09 06:53:42,177 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:53:42,183 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 17)
+2025-11-09 06:53:42,183 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:53:43,199 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:53:43,200 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:53:53,933 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:53:55,523 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:53:55,597 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:53:55,598 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:53:55,599 - INFO - Saving transaction, with item df ->
+2025-11-09 06:53:55,599 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:53:55,599 - INFO - Executing SQL statement with values -> ('2025-11-09T06:53:55.599963', '2025-11-09T06:53:55.599963', 1)
+2025-11-09 06:53:55,600 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:53:55,605 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 18)
+2025-11-09 06:53:55,605 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:53:56,616 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:53:56,616 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:54:05,473 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:54:05,474 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:54:10,649 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:54:10,724 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:54:10,724 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:54:10,725 - INFO - Saving transaction, with item df ->
+2025-11-09 06:54:10,726 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:54:10,726 - INFO - Executing SQL statement with values -> ('2025-11-09T06:54:10.726653', '2025-11-09T06:54:10.726653', 1)
+2025-11-09 06:54:10,726 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:54:10,731 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 19)
+2025-11-09 06:54:10,731 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:54:11,697 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:54:11,697 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:54:35,824 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:54:37,375 - INFO - Loading page 1: Input Transactions
+2025-11-09 06:54:37,452 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:54:37,452 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1
+2025-11-09 06:54:37,454 - INFO - Saving transaction, with item df ->
+2025-11-09 06:54:37,454 - INFO - Empty DataFrame
+Columns: [temp_item_id, parent_product_id, spending_item_id, new_item_name, override_price, num_purchased]
+Index: []
+2025-11-09 06:54:37,454 - INFO - Executing SQL statement with values -> ('2025-11-09T06:54:37.454851', '2025-11-09T06:54:37.454851', 1)
+2025-11-09 06:54:37,454 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 06:54:37,461 - INFO - Executing SQL statement with values -> ('Sun 09 Nov 2025', None, 0, False, None, None, None, None, None, 20)
+2025-11-09 06:54:37,461 - INFO - 
+            INSERT INTO Transactions (date,time,override_money,is_income,money_store_id,vendor_id,shop_location_id,category_id,description, meta_data_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            
+2025-11-09 06:54:38,966 - INFO - Executing SQL statement with values -> ()
+2025-11-09 06:54:38,967 - INFO - UPDATE Users SET tokens=1120 WHERE user_id=1

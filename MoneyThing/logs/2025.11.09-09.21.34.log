@@ -1,0 +1,36 @@
+2025-11-09 09:21:34,562 - INFO - Logging In with User ID: 1
+2025-11-09 09:21:34,599 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 09:21:34,599 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 09:21:44,934 - INFO - Executing SQL statement with values -> ('2025-11-09T09:21:44.933973', '2025-11-09T09:21:44.933973', 1)
+2025-11-09 09:21:44,934 - INFO - 
+            INSERT INTO MetaData
+            (created_timestamp, edited_timestamp, row_deleted, user_id)
+            VALUES
+            (?, ?, 0, ?);
+            
+2025-11-09 09:21:44,940 - INFO - Executing SQL statement with values -> (40, 'Month', 1, 56)
+2025-11-09 09:21:44,940 - INFO - 
+            INSERT INTO Budgets (spending_limit,time_period,category_id, meta_data_id)
+            VALUES (?, ?, ?, ?);
+            
+2025-11-09 09:21:49,350 - INFO - Loading page 3: Database View
+2025-11-09 09:21:55,752 - INFO - Executing User SQL: SELECT * FROM
+2025-11-09 09:22:08,654 - INFO - Executing User SQL: SELECT * FROM Budgets
+2025-11-09 09:22:08,793 - INFO - Executing User SQL: SELECT * FROM Budgets
+2025-11-09 09:22:16,631 - INFO - Loading page 3: Database View
+2025-11-09 09:22:16,924 - INFO - Executing User SQL: SELECT * FROM Budgets
+2025-11-09 09:24:23,324 - INFO - Loading page 4: Money Stores
+2025-11-09 09:24:23,969 - INFO - Loading page 4: Money Stores
+2025-11-09 09:24:25,412 - INFO - Loading page 2: Edit Vendors
+2025-11-09 09:28:08,553 - INFO - Executing SQL statement with values -> ()
+2025-11-09 09:28:08,554 - INFO - SELECT * FROM Budgets
+2025-11-09 09:28:10,307 - INFO - Executing SQL statement with values -> ()
+2025-11-09 09:28:10,307 - INFO - SELECT * FROM Budgets
+2025-11-09 09:29:43,631 - INFO - Executing SQL statement with values -> ()
+2025-11-09 09:29:43,631 - INFO - SELECT * FROM Budgets
+2025-11-09 09:29:45,757 - INFO - Executing SQL statement with values -> ()
+2025-11-09 09:29:45,757 - INFO - SELECT * FROM Budgets

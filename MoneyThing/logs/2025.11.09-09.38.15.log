@@ -1,0 +1,20 @@
+2025-11-09 09:38:15,673 - INFO - Logging In with User ID: 1
+2025-11-09 09:38:15,712 - INFO - Executing SQL statement with values -> [1]
+2025-11-09 09:38:15,712 - INFO - 
+    SELECT *
+    FROM Vouchers
+    JOIN MetaData ON Vouchers.meta_data_id = MetaData.meta_data_id
+    WHERE MetaData.user_id = ? AND MetaData.row_deleted = 0;
+2025-11-09 09:38:21,409 - INFO - Loading page 3: Database View
+2025-11-09 09:38:22,303 - INFO - Loading page 4: Money Stores
+2025-11-09 09:38:22,940 - INFO - Loading page 4: Money Stores
+2025-11-09 09:38:23,824 - INFO - Loading page 1: Input Transactions
+2025-11-09 09:38:27,592 - INFO - Loading page 2: Edit Vendors
+2025-11-09 09:38:28,624 - INFO - Loading page 2: Edit Vendors
+2025-11-09 09:38:31,545 - INFO - Loading page 2: Edit Vendors
+2025-11-09 09:39:47,494 - INFO - Executing SQL statement with values -> ()
+2025-11-09 09:39:47,494 - INFO - SELECT * FROM Budgets
+2025-11-09 09:42:56,461 - INFO - Executing SQL statement with values -> ()
+2025-11-09 09:42:56,462 - INFO - SELECT * FROM Budgets
+2025-11-09 09:43:04,145 - INFO - Executing SQL statement with values -> ()
+2025-11-09 09:43:04,146 - INFO - SELECT * FROM Budgets

@@ -1,0 +1,7 @@
+2025-11-09 04:59:49,068 - INFO - Executing SQL statement with values -> ('chris', '$2b$12$EjrutK7XGat9L5mETMLMaeCMAsy8rtbj9JI5yIxeNpI2RXejbDGXW')
+2025-11-09 04:59:49,068 - INFO - 
+            INSERT INTO Users (username, password_hash)
+            VALUES (?, ?);
+            
+2025-11-09 04:59:53,975 - INFO - Logging In with User ID: 1
+2025-11-09 04:59:54,040 - INFO - Loading page 1: Input Transactions
